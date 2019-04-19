@@ -1,0 +1,14 @@
+
+.building {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -2px;
+  left: 40px;
+  width: 100px;
+  height: 400px;
+}
+
+.parallax-container {
+  height: 50vh;
+  position: relative;
+}
