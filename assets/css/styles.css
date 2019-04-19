@@ -1,11 +1,22 @@
+header {
+  height: 100vh;
+  background-color: #292929
+}
 
-.building {
-  background-color: #ffffff;
+#header-logo {
   position: absolute;
-  bottom: -2px;
-  left: 40px;
-  width: 100px;
-  height: 400px;
+  top: 50%;
+  left: 50%;
+  width: 33%;
+  transform: translate(-50%, -50%);
+}
+
+#down-arrow {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%)
 }
 
 .parallax-container {

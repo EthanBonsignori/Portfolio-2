@@ -7,6 +7,9 @@
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
   <!-- Google Icon Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -18,21 +21,27 @@
 <body>
   
   <header>
-
+    <canvas id="header-logo"></canvas>
+    <i id="down-arrow" class="material-icons grey-text text-darken-1">arrow_drop_down</i>
   </header>
 
   <div class="parallax-container">
     <div class="parallax">
       <img src="assets/images/stars.jpg" alt="">
+    </div>
   </div>
 
+  
 
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- My js -->
+  <!-- TweenMax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- Logo Animation -->
+  <script src="assets/javascript/logo.js"></script>
   <script>
     $(document).ready(function () {
       $('.sidenav').sidenav()
