@@ -20,12 +20,12 @@
   <link rel="icon" type="png" href="assets/images/favicon.png">
 
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.css">
 
   <title>Ethan Bonsignori Portfolio</title>
 
 </head>
 <body>
-  
   <header>
     <h1 id="title" class="flow-text center-align">Ethan Bonsignori</h1>
     <h1 id="subtitle" class="flow-text center-align">Full-Stack Web Developer</h1>
@@ -47,12 +47,23 @@
   
   <div class="parallax-container">
     <div class="parallax">
-      <img src="assets/images/stars.jpg" alt="">
+      <img src="assets/images/stars.jpg">
     </div>
   </div>
 
-  
+  <div id="nav-button-container">
+    <button id="nav-button" class="btn btn-large red lighten-1 hamburger hamburger--squeeze button-collapse" type="button" data-activates="side-menu">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
 
+  <ul id="side-menu" class="sidenav red lighten-1">
+    <li><a class="white-text waves-effect waves-light" href="#">About</a></li>
+    <li><a class="white-text waves-effect waves-light" href="#">Portfolio</a></li>
+    <li><a class="white-text waves-effect waves-light" href="#">Contact</a></li>
+  </ul>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
@@ -62,12 +73,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <!-- Logo Animation -->
   <script src="assets/javascript/logo.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.sidenav').sidenav()
-      $('.parallax').parallax()
-    })
-  </script>
+  <!-- My JS -->
+  <script src="assets/javascript/page.js"></script>
 </body>
 </html>
 

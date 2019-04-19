@@ -12,10 +12,12 @@ header {
   opacity: 0;
 }
   #title {
+    padding-top: 2rem;
     animation: fadeIn 2s ease forwards 3s
   }
   #subtitle {
     font-size: 1rem;
+    margin-top: 0.5rem;
     color: #666666;
     animation: fadeIn 2s ease forwards 3.3s
   }
@@ -28,7 +30,7 @@ header {
 #header-logo {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50.5%;
   width: 20%;
   transform: translate(-50%, -50%);
 }
@@ -39,7 +41,7 @@ header {
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
-  animation: fill 1.5s ease forwards 4.5s;
+  animation: fill 1.5s ease forwards 4s;
 }
   #welcome path:nth-child(1) {
     stroke-dasharray: 400.53px;
@@ -101,4 +103,11 @@ header {
 .parallax-container {
   height: 50vh;
   position: relative;
+}
+
+/* Sidenav */
+#nav-button-container {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
 }
