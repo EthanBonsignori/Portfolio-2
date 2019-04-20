@@ -1,3 +1,13 @@
+.row {
+  margin-bottom: 0;
+}
+.my-grey {
+  background-color: #292929;
+}
+.my-grey-darker {
+  background-color: #222222 !important;
+}
+
 header {
   height: 100vh;
   background-color: #292929
@@ -21,11 +31,17 @@ header {
     color: #666666;
     animation: fadeIn 2s ease forwards 3.3s
   }
-  @keyframes fadeIn {
-    100% {
-      opacity: 1;
+  @media screen and (max-width: 400px) {
+    #title, #subtitle {
+      position: absolute;
+      transform: translate(-50%, -50%)
+    }
+    #title {
+      left: 50%;
+      top: 50%;
     }
   }
+
 
 #header-logo {
   position: absolute;
@@ -84,19 +100,6 @@ header {
     stroke-dashoffset: 231.98px;
     animation: line-anim 2s ease forwards 1.8s;
   }
-  @keyframes line-anim {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-  @keyframes fill {
-    from {
-      fill: transparent;
-    }
-    to {
-      fill: #ffffff;
-    }
-  }
 
 #down-arrow {
   font-size: 3.5rem;
@@ -129,19 +132,6 @@ header {
 .nav-closed {
   animation: slide-left 1s ease forwards;
 }
-@keyframes slide-right {
-  to {
-    left: 350px;
-  }
-}
-@keyframes slide-left {
-  from {
-    left: 350px;
-  }
-  to {
-    left: 2rem;
-  }
-}
 
 #sidenav-logo {
   position: absolute;
@@ -153,6 +143,21 @@ header {
 
 #nav-item-first {
   margin-top: 10rem;
+}
+
+#swipe-message {
+  position: absolute;
+  width: 100%;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.hamburger:hover {
+  opacity: 1 !important;
+}
+.hamburger.is-active:hover {
+  opacity: 1 !important;
 }
 
 /* Page Content */
@@ -193,9 +198,46 @@ header {
   }
 }
 
-.my-grey {
-  background-color: #292929;
+/* Footer */
+#footer-container {
+  position: relative;
 }
-.my-grey-darker {
-  background-color: #222222 !important;
+#city {
+  width: 100vw;
+  /* height: 50vh; */
+  position: absolute;
+  bottom: 0;
+}
+
+/* Keyframes */
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffffff;
+  }
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  to {
+    left: 350px;
+  }
+}
+@keyframes slide-left {
+  from {
+    left: 350px;
+  }
+  to {
+    left: 2rem;
+  }
 }
