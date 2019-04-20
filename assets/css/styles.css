@@ -30,9 +30,15 @@ header {
 #header-logo {
   position: absolute;
   top: 50%;
-  left: 50.5%;
-  width: 20%;
+  left: 50%;
+  width: 800px;
+  max-height: 80vh;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 991px) {
+  #header-logo {
+    width: 90%;
+  }
 }
 
 #welcome {
@@ -147,4 +153,49 @@ header {
 
 #nav-item-first {
   margin-top: 10rem;
+}
+
+/* Page Content */
+.col-content {
+  height: 60vh;
+  position: relative;
+}
+
+.content-title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5rem;
+}
+
+/* About Portrait */
+#portrait {
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  right: -90px;
+  z-index: 997;
+}
+@media screen and (max-width: 1300px) {
+  #portrait {
+    width: 120px;
+    height: 140px;
+    right: -60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #portrait {
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 120px;
+  }
+}
+
+.my-grey {
+  background-color: #292929;
+}
+.my-grey-darker {
+  background-color: #222222 !important;
 }
