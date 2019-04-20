@@ -26,6 +26,26 @@
 
 </head>
 <body>
+  <!-- Sidenav toggle -->
+  <div id="nav-fade-in">
+    <div id="nav-button-container">
+      <button id="nav-button" class="btn-large red lighten-1 hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <!-- Sidenav -->
+  <aside>
+    <ul id="side-menu" class="sidenav red lighten-1">
+      <img src="assets/images/eb_white.png" alt="EB" id="sidenav-logo">
+      <li id="nav-item-first"><a class="white-text waves-effect waves-light" href="#">About</a></li>
+      <li><a class="white-text waves-effect waves-light" href="#">Portfolio</a></li>
+      <li><a class="white-text waves-effect waves-light" href="#">Contact</a></li>
+    </ul>
+  </aside>
+
   <header>
     <h1 id="title" class="flow-text center-align">Ethan Bonsignori</h1>
     <h1 id="subtitle" class="flow-text center-align">Full-Stack Web Developer</h1>
@@ -51,19 +71,7 @@
     </div>
   </div>
 
-  <div id="nav-button-container">
-    <button id="nav-button" class="btn btn-large red lighten-1 hamburger hamburger--squeeze button-collapse" type="button" data-activates="side-menu">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-  </div>
 
-  <ul id="side-menu" class="sidenav red lighten-1">
-    <li><a class="white-text waves-effect waves-light" href="#">About</a></li>
-    <li><a class="white-text waves-effect waves-light" href="#">Portfolio</a></li>
-    <li><a class="white-text waves-effect waves-light" href="#">Contact</a></li>
-  </ul>
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>

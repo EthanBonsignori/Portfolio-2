@@ -106,8 +106,45 @@ header {
 }
 
 /* Sidenav */
+#nav-fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards 3s;
+  position: relative;
+  z-index: 999;
+}
 #nav-button-container {
   position: fixed;
   top: 2rem;
   left: 2rem;
+}
+.nav-open {
+  animation: slide-right 1s ease forwards;
+}
+.nav-closed {
+  animation: slide-left 1s ease forwards;
+}
+@keyframes slide-right {
+  to {
+    left: 350px;
+  }
+}
+@keyframes slide-left {
+  from {
+    left: 350px;
+  }
+  to {
+    left: 2rem;
+  }
+}
+
+#sidenav-logo {
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%, 0);
+  width: 50%;
+}
+
+#nav-item-first {
+  margin-top: 10rem;
 }
