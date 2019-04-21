@@ -1,8 +1,5 @@
 $(document).ready(function () {
   $('.parallax').parallax()
-  $('.tooltipped').tooltip({
-    position: 'right'
-  })
 
   const navButtonContainer = document.querySelector('#nav-button-container')
   const navButton = document.querySelector('#nav-button')
@@ -26,7 +23,7 @@ $(document).ready(function () {
     outDuration: 1000,
     onOpenStart: animNavButtonOpen,
     onCloseStart: animNavButtonClose,
-    preventScrolling: true
+    preventScrolling: false
   }
 
   let elems = document.querySelectorAll('.sidenav')
@@ -38,8 +35,10 @@ $(document).ready(function () {
 
     if (instance.isOpen) {
       instance.close()
+      console.log('closing')
     } else {
       instance.open()
+      console.log('opening')
     }
   })
 })
