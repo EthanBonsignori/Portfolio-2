@@ -2,7 +2,7 @@
   margin-bottom: 0;
 }
 .my-grey {
-  background-color: #292929;
+  background-color: #292929 !important;
 }
 .my-grey-darker {
   background-color: #222222 !important;
@@ -191,6 +191,16 @@ header {
   font-size: 5rem;
 }
 
+.section-header {
+  margin: 1rem;
+}
+
+/* About Section */
+.about-header {
+  margin-top: 3rem;
+  margin-left: 0;
+}
+
 /* About Portrait */
 #portrait {
   position: absolute;
@@ -211,16 +221,19 @@ header {
     left: 50%;
     bottom: -60px;
     transform: translate(-50%, 0);
-    width: 100px;
-    height: 120px;
+    width: 180px;
+    height: 200px;
   }
 }
 
 
 /* Contact Form */
-
-#contact-form {
-  margin-top: 10vh;
+.message-alert {
+  display: none;
+  background-color: #79c879;
+  color: #fff;
+  margin: 1rem;
+  padding: 10px;
 }
 
 /* label color */

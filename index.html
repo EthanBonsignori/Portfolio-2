@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/hamburgers.css">
 
-  <title>Ethan Bonsignori Portfolio</title>
+  <title>Ethan Bonsignori</title>
 
 </head>
 <body>
@@ -41,7 +41,7 @@
   </div>
   <!-- Sidenav -->
   <aside>
-    <ul id="side-menu" class="sidenav red lighten-1">
+    <ul id="side-menu" class="sidenav red">
       <img src="assets/images/eb_white.png" alt="EB" id="sidenav-logo">
       <li id="nav-item-first"><a class="white-text waves-effect waves-light" href="#">About</a></li>
       <li><a class="white-text waves-effect waves-light" href="#">Portfolio</a></li>
@@ -90,7 +90,7 @@
   </div>
 
   <!-- About Section -->
-  <section>
+  <section id="about">
     <div class="row">
       <div class="col-content col l6 m12 s12 red valign-wrapper">
         <h1 class="white-text content-title">About</h1>
@@ -98,35 +98,66 @@
       </div>
       <div class="col-content my-grey white-text col l6 m12 s12">
         <div class="container">
-          <p>ipsum, dolor sit amet consectetur adipisicing elit. Ut dignissimos numquam architecto, facere consequuntur, vitae quia, soluta expedita suscipit minus neque ab autem corrupti delectus magni modi eius iste dolorum!</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam rem rerum, necessitatibus excepturi praesentium unde at libero a aperiam, recusandae quam, doloribus esse id deserunt assumenda ratione quae officia!</p>
-          <p>Lorem ipsum dolor sit amet consectetur,  uaerat impedit sint placeat quibusdam illum error!</p>
+          <h2 class="red-text section-header about-header">Hi,</h1>
+          <p><b>I'm a web developer living in Savannah, GA.</b></p>
+          <p>I am currently a student in a full-stack web development bootcamp offered by GA tech. 
+            From the very first class I have been in love with coding. 
+            I built this website from scratch using materialize for the first time just three months into my bootcamp!</p>
+          <p><b>Here are some arbitrary experience bars:</b></p>
+          <div class="row">
+            <div class="col l4 m5 s6">
+              <span class="skill-name">HTML</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 100%"></div>
+              </div>
+              <span class="skill-name">Javascript</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 90%"></div>
+              </div>
+              <span class="skill-name">CSS</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="col l4 m5 s6 right">
+              <span class="skill-name">Bootstrap</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 75%"></div>
+              </div>
+              <span class="skill-name">Materialize</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 70%"></div>
+              </div>
+              <span class="skill-name">Node</span>
+              <div class="progress red lighten-3">
+                <div class="determinate red" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Portfolio Section -->
-  <section>
+  <section id="portfolio">
     <div class="row">
       <div class="col-content col l6 m12 s12 white valign-wrapper">
         <h1 class="red-text content-title">Portfolio</h1>
       </div>
-      <div class="col-content my-grey white-text col l6 m12 s12">
+      <div class="col-content red white-text col l6 m12 s12">
         <div class="container">
-          <p>ipsum, dolor sit amet consectetur adipisicing elit. Ut dignissimos numquam architecto, facere consequuntur, vitae quia, soluta expedita suscipit minus neque ab autem corrupti delectus magni modi eius iste dolorum!</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quibusdam rem rerum, necessitatibus excepturi praesentium unde at libero a aperiam, recusandae quam, doloribus esse id deserunt assumenda ratione quae officia!</p>
-          <p>Lorem ipsum dolor sit amet consectetur,  uaerat impedit sint placeat quibusdam illum error!</p>
+          
         </div>
       </div>
     </div>
   </section>
 
   <div class="parallax-container">
-      <div class="parallax">
-        <img src="assets/images/bluesky_parallax.jpg">
-      </div>
+    <div class="parallax">
+      <img src="assets/images/bluesky_parallax.jpg">
     </div>
+  </div>
     
   <!-- <div class="parallax-container">
     <div class="parallax">
@@ -136,28 +167,30 @@
   </div> -->
 
   <!-- Contact Section -->
-  <section>
+  <section id="contact">
     <div class="row">
       <div class="col-content my-grey red-text col l6 m12 s12 valign-wrapper">
         <h1 class="red-text content-title">Contact</h1>
       </div>
       <div class="col-content white col l6 m12 s12">
         <div class="container">
+          <h1 class="red-text flow-text section-header">Send me a message,</h1>
+          <div class="message-alert">Your message has been sent <i class="material-icons right">check</i></div>
           <div class="col l12 m12 s12 center">
             <form id="contact-form">
               <div class="input-field">
                 <i class="material-icons prefix">person</i>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
                 <label for="name">Your Name</label>
               </div>
               <div class="input-field">
                 <i class="material-icons prefix">email</i>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
                 <label for="email">Email</label>
               </div>
               <div class="input-field">
                 <i class="material-icons prefix">message</i>
-                <textarea class="materialize-textarea" id="message"></textarea>
+                <textarea class="materialize-textarea" id="message" required></textarea>
                 <label for="message">Message</label>
               </div>
               <div class="input-field center">
@@ -165,35 +198,47 @@
               </div>
             </form>
           </div>
+              <ul>
+                <div class="col l12 m12 s12">
+                  <li><h5>Ethan Bonsignori</h5></li>
+                </div>
+                <div class="col l12 m12 s12">
+                  <li><i class="material-icons left prefix">phone</i>912 507 3547</li>
+                </div>
+                <div class="col l12 m12 s12">
+                  <li><i class="material-icons left prefix">email</i>ebonsignori@gmail.com</li>
+                </div>
+              </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer my-grey">
+  <footer class="page-footer red">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="grey-text text-darken-1">Navigation</h5>
+          <h5 class="white-text text-lighten-1">Navigation</h5>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="grey-text text-darken-1">Links</h5>
-          <a class="white-text social-icon tooltipped" href="https://github.com/EthanBonsignori" target="blank" data-tooltip="Github">
+          <h5 class="white-text text-lighten-1">Social</h5>
+          <a class="white-text social-icon" href="https://github.com/EthanBonsignori" target="blank" data-tooltip="Github">
             <i class="fab fa-github-square"></i>
           </a>
-          <a class="white-text social-icon tooltipped" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/" target="blank" data-tooltip="LinkedIn">
+          <a class="white-text social-icon" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/" target="blank" data-tooltip="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a class="white-text social-icon tooltipped" href="https://www.facebook.com/ethan.bonsignori"  target="blank" data-tooltip="Facebook">
+          <a class="white-text social-icon" href="https://www.facebook.com/ethan.bonsignori"  target="blank" data-tooltip="Facebook">
             <i class="fab fa-facebook"></i>
           </a>
         </div>
       </div>
     </div>
-    <div class="my-grey-darker footer-copyright">
+    <div class="my-grey footer-copyright">
       <div class="container">
-        <p class="grey-text text-darken-1 center-align">© 2019 Ethan Bonsignori</p>
+        <p class="grey-text text-darken-1 center-align">&copy; 2019 Ethan Bonsignori</p>
       </div>
     </div>
   </footer>
@@ -202,7 +247,7 @@
   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- TweenMax -->
+  <!-- TweenMax (for animation) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <!-- Logo Animation -->
   <script src="assets/javascript/logo.js"></script>
