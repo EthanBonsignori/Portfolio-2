@@ -10,7 +10,7 @@ const pass = functions.config().gmail.pass
 admin.initializeApp()
 
 // Function to send emails
-let sendEmail = function (message) {
+let sendEmail = function (sender, body, sEmail) {
   // Init nodemailer
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -24,9 +24,9 @@ let sendEmail = function (message) {
   const mailOptions = {
     from: email,
     to: 'ebonsignori@gmail.com',
-    subject: '🦍🦐🐖🦍🦐🐖🦍🦐🐖🦍🦐🐖🦍🦐🐖',
-    text: '!' + message,
-    html: '!' + message
+    subject: '🔥🦐 New Message from ethanbon.com 🦐🔥',
+    text: `Name: ${sender} +++++++ Body: ${sEmail} +++++++ Email: ${body}`,
+    html: `Name: ${sender} <br><br> <hr> <br><br> Body: ${sEmail} <br><br> <hr> <br><br> Email: ${body}`
   }
 
   // Callback status
@@ -43,7 +43,8 @@ let sendEmail = function (message) {
 
 exports.onDataAdded = functions.database.ref('/messages/{sessionId}').onCreate(function (snap, context) {
   const createdData = snap.val()
-  let text = createdData.mail
-
-  sendEmail(text)
+  let senderName = createdData.name
+  let senderEmail = createdData.email
+  let messageBody = createdData.body
+  sendEmail(senderName, senderEmail, messageBody)
 })
