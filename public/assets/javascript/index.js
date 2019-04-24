@@ -1,25 +1,31 @@
+// On document load,
 $(document).ready(function () {
+  // Initialize materialize elements
   $('.parallax').parallax()
-  $('.tooltipped').tooltip({
-    position: 'right'
-  })
+  $('.tabs').tabs()
+  $('.scrollspy').scrollSpy({ throttle: 1 })
 
+  // Store html elements
   const navButtonContainer = document.querySelector('#nav-button-container')
   const navButton = document.querySelector('#nav-button')
+  const navClose = $('.nav-close')
 
-  let animNavButtonOpen = () => {
+  // change classes of nav button on nav open to animate it
+  const animNavButtonOpen = () => {
     navButtonContainer.classList.remove('nav-closed')
     navButtonContainer.classList.add('nav-open')
     navButton.classList.add('is-active', 'sidenav-close')
   }
 
-  let animNavButtonClose = () => {
+  // change classes of nav button on nav close to animate it
+  const animNavButtonClose = () => {
     navButtonContainer.classList.remove('nav-open')
     navButtonContainer.classList.add('nav-closed')
     navButton.classList.remove('is-active', 'sidenav-close')
   }
 
-  let options = {
+  // Set sidenav options
+  const options = {
     edge: 'left',
     draggable: true,
     inDuration: 1000,
@@ -29,17 +35,23 @@ $(document).ready(function () {
     preventScrolling: true
   }
 
-  let elems = document.querySelectorAll('.sidenav')
-  let instances = M.Sidenav.init(elems, options)
+  // Grab the sidenav and initialize it
+  const elems = document.querySelectorAll('.sidenav')
+  const instances = M.Sidenav.init(elems, options)
+  const elem = document.querySelector('.sidenav')
+  const instance = M.Sidenav.getInstance(elem)
 
+  // Close and open the side nav from the floating icon
   navButton.addEventListener('click', function () {
-    let elem = document.querySelector('.sidenav')
-    let instance = M.Sidenav.getInstance(elem)
-
     if (instance.isOpen) {
       instance.close()
     } else {
       instance.open()
     }
+  })
+
+  // Close the side nav on button click
+  $(navClose).on('click', () => {
+    instance.close()
   })
 })

@@ -65,6 +65,7 @@ header {
   }
 }
 
+
 #welcome {
   position: absolute;
   top: 30%;
@@ -181,7 +182,18 @@ header {
 /* Page Content */
 .col-content {
   height: 60vh;
+  min-height: 500px;
   position: relative;
+}
+@media screen and (max-height: 770px) {
+  .col-content {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .col-content {
+    height: 550px;
+  }
 }
 
 .content-title {
@@ -226,8 +238,47 @@ header {
   }
 }
 
+/* Portfolio Section */
+.col-content-p {
+  height: 600px;
+}
 
-/* Contact Form */
+#tab-container {
+  padding-top: 1rem;
+}
+
+.tabs .tab a.active, .tabs .tab a:focus.active {
+  background-color: transparent;
+  color: #fff;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+  background-color:#fff;
+} /*Color of underline*/
+@media screen and (max-width: 1175px) {
+  .tabs .tab a {
+    padding: 0 14px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tabs .tab a {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #tab-container {
+    padding: 0;
+  }
+  .tabs .tab a {
+    padding: 0 6px;
+    font-size: 9px;
+  }
+}
+
+
+/* Contact Section */
 .message-alert {
   display: none;
   background-color: #79c879;

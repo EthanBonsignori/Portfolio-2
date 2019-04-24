@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,12 @@
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
   <!-- Google Icon Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
@@ -28,6 +27,7 @@
   <title>Ethan Bonsignori</title>
 
 </head>
+
 <body>
   <!-- Sidenav toggle -->
   <div id="nav-fade-in">
@@ -43,23 +43,25 @@
   <aside>
     <ul id="side-menu" class="sidenav red">
       <img src="assets/images/eb_white.png" alt="EB" id="sidenav-logo">
-      <li id="nav-item-first"><a class="white-text waves-effect waves-light" href="#">About</a></li>
-      <li><a class="white-text waves-effect waves-light" href="#">Portfolio</a></li>
-      <li><a class="white-text waves-effect waves-light" href="#">Contact</a></li>
+      <li id="nav-item-first"><a class="white-text waves-effect waves-light nav-close" href="#about">About</a></li>
+      <li><a class="white-text waves-effect waves-light nav-close" href="#portfolio">Portfolio</a></li>
+      <li><a class="white-text waves-effect waves-light nav-close" href="#contact">Contact</a></li>
       <div class="social-icons center-align">
         <h6 class="white-text">More Stuff</h6>
         <p><a class="white-text social-icon" href="https://github.com/EthanBonsignori" target="blank">
-          <i class="fab fa-github-square"></i>
-        </a></p>
-        <p><a class="white-text social-icon" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/" target="blank">
-          <i class="fab fa-linkedin"></i>
-        </a></p>
-        <p><a class="white-text social-icon" href="https://www.facebook.com/ethan.bonsignori"  target="blank">
-          <i class="fab fa-facebook"></i>
-        </a></p>
+            <i class="fab fa-github-square"></i>
+          </a></p>
+        <p><a class="white-text social-icon" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/"
+            target="blank">
+            <i class="fab fa-linkedin"></i>
+          </a></p>
+        <p><a class="white-text social-icon" href="https://www.facebook.com/ethan.bonsignori" target="blank">
+            <i class="fab fa-facebook"></i>
+          </a></p>
       </div>
       <div id="swipe-message" class="hide-on-med-and-up">
-        <li><a class="grey-text text-lighten-2"><i class="material-icons grey-text text-lighten-2">chevron_left</i> Swipe to close</a></li>
+        <li><a class="grey-text text-lighten-2"><i class="material-icons grey-text text-lighten-2">chevron_left</i>
+            Swipe to close</a></li>
       </div>
     </ul>
   </aside>
@@ -72,17 +74,28 @@
     <i id="down-arrow" class="material-icons grey-text text-darken-3">arrow_drop_down</i>
     <!-- Welcome Text -->
     <svg id="welcome" width="347" height="54" viewBox="0 0 347 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M68.9246 1.816L54.3806 52H47.0366L35.3726 11.608L23.3486 52L16.0046 52.072L1.9646 1.816H8.9486L19.8926 44.296L31.9886 1.816H39.4046L50.8526 44.224L61.8686 1.816H68.9246Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M82.6468 6.928V24.136H100.935V29.176H82.6468V46.816H103.095V52H76.0948V1.744H103.095V6.928H82.6468Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M119.561 46.96H137.129V52H113.009V1.816H119.561V46.96Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M141.639 26.872C141.639 21.976 142.743 17.584 144.951 13.696C147.159 9.76 150.159 6.688 153.951 4.48C157.791 2.272 162.039 1.168 166.695 1.168C172.167 1.168 176.943 2.488 181.023 5.128C185.103 7.768 188.079 11.512 189.951 16.36H182.103C180.711 13.432 178.695 11.176 176.055 9.592C173.463 7.96 170.343 7.144 166.695 7.144C163.191 7.144 160.047 7.96 157.263 9.592C154.479 11.176 152.295 13.48 150.711 16.504C149.127 19.48 148.335 22.936 148.335 26.872C148.335 30.808 149.127 34.264 150.711 37.24C152.295 40.216 154.479 42.52 157.263 44.152C160.047 45.736 163.191 46.528 166.695 46.528C170.343 46.528 173.463 45.736 176.055 44.152C178.695 42.568 180.711 40.312 182.103 37.384H189.951C188.079 42.184 185.103 45.904 181.023 48.544C176.943 51.136 172.167 52.432 166.695 52.432C162.039 52.432 157.791 51.352 153.951 49.192C150.159 46.984 147.159 43.936 144.951 40.048C142.743 36.16 141.639 31.768 141.639 26.872Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M222.456 52.504C217.8 52.504 213.552 51.424 209.712 49.264C205.872 47.056 202.824 44.008 200.568 40.12C198.36 36.184 197.256 31.768 197.256 26.872C197.256 21.976 198.36 17.584 200.568 13.696C202.824 9.76 205.872 6.712 209.712 4.552C213.552 2.344 217.8 1.24 222.456 1.24C227.16 1.24 231.432 2.344 235.272 4.552C239.112 6.712 242.136 9.736 244.344 13.624C246.552 17.512 247.656 21.928 247.656 26.872C247.656 31.816 246.552 36.232 244.344 40.12C242.136 44.008 239.112 47.056 235.272 49.264C231.432 51.424 227.16 52.504 222.456 52.504ZM222.456 46.6C225.96 46.6 229.104 45.784 231.888 44.152C234.72 42.52 236.928 40.216 238.512 37.24C240.144 34.264 240.96 30.808 240.96 26.872C240.96 22.936 240.144 19.48 238.512 16.504C236.928 13.48 234.72 11.176 231.888 9.592C229.104 7.96 225.96 7.144 222.456 7.144C218.952 7.144 215.784 7.96 212.952 9.592C210.168 11.176 207.96 13.48 206.328 16.504C204.744 19.48 203.952 22.936 203.952 26.872C203.952 30.808 204.744 34.264 206.328 37.24C207.96 40.216 210.168 42.52 212.952 44.152C215.784 45.784 218.952 46.6 222.456 46.6Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M307.21 2.176V52H300.658V14.848L284.098 52H279.49L262.858 14.92V52H256.306V2.176H263.362L281.794 43.36L300.226 2.176H307.21Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
-      <path d="M324.873 6.928V24.136H343.161V29.176H324.873V46.816H345.321V52H318.321V1.744H345.321V6.928H324.873Z" stroke="white" stroke-width="2" mask="url(#path-1-outside-1)"/>
+      <path
+        d="M68.9246 1.816L54.3806 52H47.0366L35.3726 11.608L23.3486 52L16.0046 52.072L1.9646 1.816H8.9486L19.8926 44.296L31.9886 1.816H39.4046L50.8526 44.224L61.8686 1.816H68.9246Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
+      <path d="M82.6468 6.928V24.136H100.935V29.176H82.6468V46.816H103.095V52H76.0948V1.744H103.095V6.928H82.6468Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
+      <path d="M119.561 46.96H137.129V52H113.009V1.816H119.561V46.96Z" stroke="white" stroke-width="2"
+        mask="url(#path-1-outside-1)" />
+      <path
+        d="M141.639 26.872C141.639 21.976 142.743 17.584 144.951 13.696C147.159 9.76 150.159 6.688 153.951 4.48C157.791 2.272 162.039 1.168 166.695 1.168C172.167 1.168 176.943 2.488 181.023 5.128C185.103 7.768 188.079 11.512 189.951 16.36H182.103C180.711 13.432 178.695 11.176 176.055 9.592C173.463 7.96 170.343 7.144 166.695 7.144C163.191 7.144 160.047 7.96 157.263 9.592C154.479 11.176 152.295 13.48 150.711 16.504C149.127 19.48 148.335 22.936 148.335 26.872C148.335 30.808 149.127 34.264 150.711 37.24C152.295 40.216 154.479 42.52 157.263 44.152C160.047 45.736 163.191 46.528 166.695 46.528C170.343 46.528 173.463 45.736 176.055 44.152C178.695 42.568 180.711 40.312 182.103 37.384H189.951C188.079 42.184 185.103 45.904 181.023 48.544C176.943 51.136 172.167 52.432 166.695 52.432C162.039 52.432 157.791 51.352 153.951 49.192C150.159 46.984 147.159 43.936 144.951 40.048C142.743 36.16 141.639 31.768 141.639 26.872Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
+      <path
+        d="M222.456 52.504C217.8 52.504 213.552 51.424 209.712 49.264C205.872 47.056 202.824 44.008 200.568 40.12C198.36 36.184 197.256 31.768 197.256 26.872C197.256 21.976 198.36 17.584 200.568 13.696C202.824 9.76 205.872 6.712 209.712 4.552C213.552 2.344 217.8 1.24 222.456 1.24C227.16 1.24 231.432 2.344 235.272 4.552C239.112 6.712 242.136 9.736 244.344 13.624C246.552 17.512 247.656 21.928 247.656 26.872C247.656 31.816 246.552 36.232 244.344 40.12C242.136 44.008 239.112 47.056 235.272 49.264C231.432 51.424 227.16 52.504 222.456 52.504ZM222.456 46.6C225.96 46.6 229.104 45.784 231.888 44.152C234.72 42.52 236.928 40.216 238.512 37.24C240.144 34.264 240.96 30.808 240.96 26.872C240.96 22.936 240.144 19.48 238.512 16.504C236.928 13.48 234.72 11.176 231.888 9.592C229.104 7.96 225.96 7.144 222.456 7.144C218.952 7.144 215.784 7.96 212.952 9.592C210.168 11.176 207.96 13.48 206.328 16.504C204.744 19.48 203.952 22.936 203.952 26.872C203.952 30.808 204.744 34.264 206.328 37.24C207.96 40.216 210.168 42.52 212.952 44.152C215.784 45.784 218.952 46.6 222.456 46.6Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
+      <path
+        d="M307.21 2.176V52H300.658V14.848L284.098 52H279.49L262.858 14.92V52H256.306V2.176H263.362L281.794 43.36L300.226 2.176H307.21Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
+      <path d="M324.873 6.928V24.136H343.161V29.176H324.873V46.816H345.321V52H318.321V1.744H345.321V6.928H324.873Z"
+        stroke="white" stroke-width="2" mask="url(#path-1-outside-1)" />
     </svg>
   </header>
 
-  
+
   <div class="parallax-container">
     <div class="parallax">
       <img src="assets/images/sky_parallax.jpg">
@@ -90,7 +103,7 @@
   </div>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="scrollspy">
     <div class="row">
       <div class="col-content col l6 m12 s12 red valign-wrapper">
         <h1 class="white-text content-title">About</h1>
@@ -99,55 +112,98 @@
       <div class="col-content my-grey white-text col l6 m12 s12">
         <div class="container">
           <h2 class="red-text section-header about-header">Hi,</h1>
-          <p><b>I'm a web developer living in Savannah, GA.</b></p>
-          <p>I am currently a student in a full-stack web development bootcamp offered by GA tech. 
-            From the very first class I have been in love with coding. 
-            I built this website from scratch using materialize for the first time just three months into my bootcamp!</p>
-          <p><b>Here are some arbitrary experience bars:</b></p>
-          <div class="row">
-            <div class="col l4 m5 s6">
-              <span class="skill-name">HTML</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 100%"></div>
+            <p><b>I'm a web developer living in Savannah, GA.</b></p>
+            <p>I am currently a student in a full-stack web development bootcamp offered by GA tech.
+              From the very first class I have been in love with coding.
+              I built this website from scratch using materialize (for the first time) three months into my bootcamp!
+            </p>
+            <p><b>Here are some arbitrary experience bars:</b></p>
+            <div class="row">
+              <div class="col l4 m5 s6">
+                <span class="skill-name">HTML</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 100%"></div>
+                </div>
+                <span class="skill-name">Javascript</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 90%"></div>
+                </div>
+                <span class="skill-name">CSS</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 80%"></div>
+                </div>
+                <span class="skill-name">Firebase</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 85%"></div>
+                </div>
               </div>
-              <span class="skill-name">Javascript</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 90%"></div>
-              </div>
-              <span class="skill-name">CSS</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 80%"></div>
+              <div class="col l4 m5 s6 right">
+                <span class="skill-name">Bootstrap</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 75%"></div>
+                </div>
+                <span class="skill-name">Materialize</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 70%"></div>
+                </div>
+                <span class="skill-name">Node</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 60%"></div>
+                </div>
+                <span class="skill-name">React</span>
+                <div class="progress red lighten-3">
+                  <div class="determinate red" style="width: 40%"></div>
+                </div>
               </div>
             </div>
-            <div class="col l4 m5 s6 right">
-              <span class="skill-name">Bootstrap</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 75%"></div>
-              </div>
-              <span class="skill-name">Materialize</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 70%"></div>
-              </div>
-              <span class="skill-name">Node</span>
-              <div class="progress red lighten-3">
-                <div class="determinate red" style="width: 60%"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="assets/images/yellowsky_parallax.jpg">
+    </div>
+  </div>
+
   <!-- Portfolio Section -->
-  <section id="portfolio">
+  <section id="portfolio" class="scrollspy">
     <div class="row">
-      <div class="col-content col l6 m12 s12 white valign-wrapper">
+      <div class="col-content-p col l6 m12 s12 white valign-wrapper">
         <h1 class="red-text content-title">Portfolio</h1>
       </div>
-      <div class="col-content red white-text col l6 m12 s12">
-        <div class="container">
-          
+      <div class="col-content-p red white-text col l6 m12 s12">
+        <div class="col s12" id="tab-container">
+          <ul class="tabs red">
+            <li class="tab">
+              <a href="#menyou" class="white-text active">MenYou</a>
+            </li>
+            <li class="tab">
+              <a href="#train-scheduler" class="white-text">Train Scheduler</a>
+            </li>
+            <li class="tab">
+              <a href="#gif-search" class="white-text">Gif Search</a>
+            </li>
+            <li class="tab">
+              <a href="#gif-search" class="white-text">Topnotch Trivia</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12" id="menyou">
+          <p class="flow-text white-text">MenYou</p>
+          <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illo! Atque qui
+            alias fuga debitis porro velit hic exercitationem reprehenderit!</p>
+        </div>
+        <div class="col s12" id="train-scheduler">
+          <p class="flow-text white-text">Train Scheduler</p>
+          <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illo! Atque qui
+            alias fuga debitis porro velit hic exercitationem reprehenderit!</p>
+        </div>
+        <div class="col s12" id="gif-search">
+          <p class="flow-text white-text">Gif Search</p>
+          <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, illo! Atque qui
+            alias fuga debitis porro velit hic exercitationem reprehenderit!</p>
         </div>
       </div>
     </div>
@@ -158,16 +214,9 @@
       <img src="assets/images/bluesky_parallax.jpg">
     </div>
   </div>
-    
-  <!-- <div class="parallax-container">
-    <div class="parallax">
-      <img src="assets/images/stars_parallax.jpg">
-    </div>
-    <img id="city" src="assets/images/city-silhouette.png" alt>
-  </div> -->
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="scrollspy">
     <div class="row">
       <div class="col-content my-grey red-text col l6 m12 s12 valign-wrapper">
         <h1 class="red-text content-title">Contact</h1>
@@ -198,20 +247,22 @@
               </div>
             </form>
           </div>
-              <ul>
-                <div class="col l12 m12 s12">
-                  <li><h5>Ethan Bonsignori</h5></li>
-                </div>
-                <div class="col l12 m12 s12">
-                  <li><i class="material-icons left prefix">phone</i>912 507 3547</li>
-                </div>
-                <div class="col l12 m12 s12">
-                  <li><i class="material-icons left prefix">email</i>ebonsignori@gmail.com</li>
-                </div>
-              </ul>
-          </div>
+          <ul>
+            <div class="col l12 m12 s12">
+              <li>
+                <h5>Ethan Bonsignori</h5>
+              </li>
+            </div>
+            <div class="col l12 m12 s12">
+              <li><i class="material-icons left prefix">phone</i>912 507 3547</li>
+            </div>
+            <div class="col l12 m12 s12">
+              <li><i class="material-icons left prefix">email</i>ebonsignori@gmail.com</li>
+            </div>
+          </ul>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -221,16 +272,24 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text text-lighten-1">Navigation</h5>
+          <ul>
+            <li><a class="white-text waves-effect waves-light" href="#about">About</a></li>
+            <li><a class="white-text waves-effect waves-light" href="#portfolio">Portfolio</a></li>
+            <li><a class="white-text waves-effect waves-light" href="#contact">Contact</a></li>
+          </ul>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text text-lighten-1">Social</h5>
-          <a class="white-text social-icon" href="https://github.com/EthanBonsignori" target="blank" data-tooltip="Github">
+          <a class="white-text social-icon" href="https://github.com/EthanBonsignori" target="blank"
+            data-tooltip="Github">
             <i class="fab fa-github-square"></i>
           </a>
-          <a class="white-text social-icon" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/" target="blank" data-tooltip="LinkedIn">
+          <a class="white-text social-icon" href="https://www.linkedin.com/in/ethan-bonsignori-559849176/"
+            target="blank" data-tooltip="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
-          <a class="white-text social-icon" href="https://www.facebook.com/ethan.bonsignori"  target="blank" data-tooltip="Facebook">
+          <a class="white-text social-icon" href="https://www.facebook.com/ethan.bonsignori" target="blank"
+            data-tooltip="Facebook">
             <i class="fab fa-facebook"></i>
           </a>
         </div>
@@ -244,7 +303,8 @@
   </footer>
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- TweenMax (for animation) -->
@@ -259,6 +319,5 @@
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-functions.js"></script>
   <script src="assets/javascript/firebase.js"></script>
 </body>
+
 </html>
-
-

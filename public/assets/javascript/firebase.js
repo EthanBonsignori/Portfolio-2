@@ -27,6 +27,14 @@ const submitForm = (e) => {
   // Save message
   saveMessage(name, email, body)
 
+  // Show alert
+  document.querySelector('.message-alert').style.display = 'block'
+
+  // Hide alert after 5 seconds
+  setTimeout(() => {
+    document.querySelector('.message-alert').style.display = 'none'
+  }, 5000)
+
   // Clear form
   document.getElementById('contact-form').reset()
 }

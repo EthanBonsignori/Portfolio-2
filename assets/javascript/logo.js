@@ -1,9 +1,12 @@
+// Select canvas
 let canvas = document.getElementById('header-logo')
+// Make the canvas responsive
 let heightRatio = 1.5
 canvas.height = canvas.width * heightRatio
 let context = canvas.getContext('2d')
 let particles = []
 
+// Draw the EB logo
 function drawLogo() {
   canvas.width = png.width * 5
   canvas.height = png.height * 5
@@ -47,6 +50,7 @@ let render = () => {
   requestAnimationFrame(render)
 }
 
+// Image (base64)
 let png = new Image()
 png.onload = drawLogo
 png.src =
