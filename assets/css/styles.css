@@ -277,6 +277,10 @@ header {
   }
 }
 
+.portfolio-img {
+  width: 600px;
+}
+
 
 /* Contact Section */
 .message-alert {

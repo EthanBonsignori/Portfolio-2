@@ -4,6 +4,7 @@ $(document).ready(function () {
   $('.parallax').parallax()
   $('.tabs').tabs()
   $('.scrollspy').scrollSpy({ throttle: 1 })
+  $('.materialboxed').materialbox()
 
   // Store html elements
   const navButtonContainer = document.querySelector('#nav-button-container')
